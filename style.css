@@ -1,10 +1,21 @@
 body{
     background-color: rgb(30,30,40);
+    color: #f28B66;
+    font-family: "Copperplate Gothic Bold", serif;
+}
 
+header{
+    display: flex;
+    flex-direction: row;
 }
 
 nav{
     width: 100%;
     max-height: 5rem;
-    border: 2px solid white;
+}
+
+#logo{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
 }

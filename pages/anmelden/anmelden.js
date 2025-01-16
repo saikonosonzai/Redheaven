@@ -11,17 +11,23 @@ document.getElementById("form").addEventListener("submit", (event) => {
             localStorage.setItem("loggedIn", "true");
             window.location.href = "../../index.html";
             updateHeader();
+        }else{
+            document.getElementById("Error").innerHTML = "Nutzername oder Passwort falsch";
+            document.getElementById("Error").style.display = "block";
         }
     } else {
         document.getElementById("confirm").required = true;
         if (password.value === confirmPassword.value) {
             localStorage.setItem("Username", username.value);
             localStorage.setItem("Password", password.value);
+            document.getElementById("Error").style.display = "none";
             switchForm();
             isLogin = true;
         } else {
             password.value = "";
             confirmPassword.value = "";
+            document.getElementById("Error").innerHTML = "Passwörter stimmen nicht überein";
+            document.getElementById("Error").style.display = "block";
         }
     }
 });

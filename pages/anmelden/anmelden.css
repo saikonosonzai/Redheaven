@@ -76,6 +76,16 @@ button:hover {
     width: 100%;
 }
 
+#register{
+    cursor: pointer;
+}
+
 .confirmPassword{
     display: none;
+}
+
+.Error{
+    display: none;
+    font-size: small;
+    width: 100%;
 }

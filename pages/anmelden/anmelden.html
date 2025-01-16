@@ -7,6 +7,7 @@
     <title>Red Heaven</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="anmelden.css">
+    <script src="../../Service.js" defer></script>
 </head>
 <body>
 
@@ -20,10 +21,27 @@
         <a href="../produkt/produkt.html">Produkt</a>
         <a href="../unternehmen/unternehmen.html">Unternehmen</a>
         <a href="../kontakt/kontakt.html">Kontakt</a>
-        <a href="anmelden.html">Anmelden</a>
+        <a href="anmelden.html" id="anmelden">Anmelden</a>
+        <p id="logOut" onclick="logOut()">Log-Out</p>
     </nav>
 </header>
 
+<div id="login">
+    <h2>Anmelden</h2>
+    <form action="../../index.html" method="post">
+        <div>
+            <label for="username">Nutzername</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div>
+            <label for="password">Passwort</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Weiter</button>
+    </form>
+
+</div>
 
 </body>
 <script src="anmelden.js"></script>

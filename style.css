@@ -66,3 +66,12 @@ a:visited {
 
 }
 
+#anmelden{
+    display: none;
+}
+
+#logOut{
+    margin: 0;
+    cursor: pointer;
+}
+

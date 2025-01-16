@@ -33,6 +33,7 @@ document.getElementById("form").addEventListener("submit", (event) => {
 });
 
 function switchForm() {
+    document.getElementById("Error").style.display = "none";
     isLogin = false;
    switchClass(document.getElementById("confirmDiv"));
     switchClass(document.getElementById("confirmInput"));

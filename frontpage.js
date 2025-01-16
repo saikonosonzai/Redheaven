@@ -13,4 +13,4 @@ function rotateImages() {
     imageIndex++;
 }
 
-setInterval(rotateImages, 6000);
+setInterval(rotateImages, 600000);

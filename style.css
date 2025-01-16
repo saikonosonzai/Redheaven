@@ -42,6 +42,24 @@ a{
 
 }
 
+#Interview{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    box-shadow: 0 4px 8px 0 #070e26;
+    border-radius: 2rem;
+    margin: 4rem;
+    padding: 2rem;
+
+    height: auto;
+    width: auto;
+    min-height: 5rem;
+    min-width: 30rem;
+    background: #070e26;
+}
+
 a:visited {
     color: #f28B66;
 }

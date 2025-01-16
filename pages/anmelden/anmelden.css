@@ -17,15 +17,19 @@ input{
     border-radius: 2rem;
     padding: .5rem;
 }
+label{
+    margin-top: .7rem;
+}
 
 
 button {
     background-color: #f28B66;
     color: #FFFFFF;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
+    margin-top: .7rem;
+    padding: .8rem 1.3rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
     cursor: pointer;
 
     transition: .5s ease-in-out;
@@ -45,6 +49,9 @@ button:hover {
 
     box-shadow: 0 4px 8px 0 #070e26;
     padding: 2rem;
+
+    height: auto;
+    width: auto;
     min-height: 20rem;
     min-width: 15rem;
     background: #070e26;
@@ -64,4 +71,11 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.confirmPassword{
+    display: none;
 }

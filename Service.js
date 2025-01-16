@@ -1,10 +1,10 @@
 function updateHeader() {
     if (localStorage.getItem("loggedIn") === "true") {
-        document.getElementById("anmelden").style.display = "none"; // Hide login button
-        document.getElementById("logOut").style.display = "block";  // Show logout button
+        document.getElementById("anmelden").style.display = "none";
+        document.getElementById("logOut").style.display = "block";
     } else {
-        document.getElementById("logOut").style.display = "none";  // Hide logout button
-        document.getElementById("anmelden").style.display = "block";  // Show login button
+        document.getElementById("logOut").style.display = "none";
+        document.getElementById("anmelden").style.display = "block";
     }
 }
 

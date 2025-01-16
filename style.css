@@ -13,6 +13,7 @@ body{
 }
 
 header{
+    z-index: 1;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -58,6 +59,10 @@ a{
     min-height: 5rem;
     min-width: 30rem;
     background: #070e26;
+}
+
+audio{
+    margin-bottom: 1.5rem;
 }
 
 a:visited {

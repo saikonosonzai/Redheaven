@@ -81,7 +81,8 @@ a:visited {
     align-items: center;
 
     margin-top: 10rem;
-    width: 70rem;
+    min-width: 5rem;
+    width: 60%;
     height: 30rem;
     border-radius: 5rem;
     overflow: hidden;

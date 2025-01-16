@@ -29,8 +29,14 @@ document.getElementById("form").addEventListener("submit", (event) => {
 function switchForm() {
     isLogin = false;
    switchClass(document.getElementById("confirmDiv"));
-   switchClass(document.getElementById("confirmInput"));
-   switchClass(document.getElementById("confirm"));
+    switchClass(document.getElementById("confirmInput"));
+    switchClass(document.getElementById("confirm"));
+    if (document.getElementById("register").innerHTML === "Hier Registrieren"){
+        document.getElementById("register").innerHTML = "Zurück zum Login";
+    }else{
+        document.getElementById("register").innerHTML = "Hier Registrieren";
+    }
+
 }
 function switchClass(document) {
     if (document.className === "") {

@@ -30,6 +30,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
+    background-color: #070e26;
 }
 
 p{
@@ -103,13 +104,18 @@ a:visited {
     cursor: pointer;
 }
 
-#footer {
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #070e26;
-    color: #BF4539;
+    background: #070e26;
+    text-align: center;
+    display: grid;
+}
+
+.copyright {
+    position: absolute;
     text-align: center;
 }
 

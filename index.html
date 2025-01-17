@@ -7,6 +7,26 @@
     <title>Red Heaven</title>
     <link rel="stylesheet" href="style.css">
     <script src="service.js" defer></script>
+    <style>
+    header {
+        background-color: #070e26;
+    }
+
+    .headerInk {
+        color: #f28B66;
+        font-family: "Copperplate Gothic Light", "Bauhaus 93";
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    .logoInk {
+        color: #BF4539;
+        font-family: "Copperplate Gothic Light", "Bauhaus 93";
+        font-size: 30px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    </style>
 </head>
 <body>
 
@@ -14,13 +34,13 @@
 <header>
     <a href="index.html">
         <img id="logo" src="resources/Red_Heaven_Logo.png" alt="Red Heaven Logo">
-        <p>Red Heaven</p>
+        <p class="logoInk">Red Heaven</p>
     </a>
     <nav>
-        <a href="pages/produkt/produkt.html">Produkt</a>
-        <a href="pages/unternehmen/unternehmen.html">Unternehmen</a>
-        <a href="pages/anmelden/anmelden.html" id="anmelden">Anmelden</a>
-        <p id="logOut" onclick="logOut()">Log-Out</p>
+        <a class="headerInk" href="pages/produkt/produkt.html">Produkt</a>
+        <a class="headerInk" href="pages/unternehmen/unternehmen.html">Unternehmen</a>
+        <a class="headerInk" href="pages/anmelden/anmelden.html" id="anmelden">Anmelden</a>
+        <p class="headerInk" id="logOut" onclick="logOut()">Log-Out</p>
     </nav>
 </header>
 

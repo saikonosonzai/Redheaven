@@ -8,7 +8,7 @@ section{
 .card{
     width: 70%;
     margin-bottom: 2.5rem;
-    padding: 1rem;
+    padding: 1rem 1rem 1.5rem;
     text-align: center;
     cursor: pointer;
 }

@@ -24,21 +24,24 @@ header {
     display: flex;
     flex-direction: row;
     background-color: #070e26;
+
+    .headerInk {
+        color: #f28B66;
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    .logoInk {
+        font-family: "Copperplate Gothic Light";
+        color: #BF4539;
+        font-size: 30px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
 }
 
 /*
-.headerInk {
-    color: #f28B66;
-    font-size: 25px;
-    text-decoration: none;
-}
 
-.logoInk {
-    color: #BF4539;
-    font-size: 30px;
-    text-decoration: none;
-    white-space: nowrap;
-}
 */
 
 nav {

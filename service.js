@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+
+
 function updateHeader() {
     if (localStorage.getItem("loggedIn") === "true") {
         document.getElementById("anmelden").style.display = "none";
@@ -16,4 +19,4 @@ function logOut() {
 
 window.addEventListener("DOMContentLoaded", () => {
     updateHeader();
-})
+});

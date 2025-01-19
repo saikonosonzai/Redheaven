@@ -1,4 +1,7 @@
-let hidePassword = true
+/*jshint esversion: 6 */
+
+
+let hidePassword = true;
 let isChanging = false;
 
 let pPasswort = document.getElementById("passwort");
@@ -11,11 +14,11 @@ function showProfilData(){
         for (let i = 0; i < localStorage.getItem("Password").length; i++) {
             passwort += "*";
         }
-        pPasswort.innerHTML = passwort
-        bChangeVisibility.innerHTML = "Paswort anzeigen"
+        pPasswort.innerHTML = passwort;
+        bChangeVisibility.innerHTML = "Paswort anzeigen";
     } else {
-        pPasswort.innerHTML = localStorage.getItem("Password")
-        bChangeVisibility.innerHTML = "Paswort verbergen"
+        pPasswort.innerHTML = localStorage.getItem("Password");
+        bChangeVisibility.innerHTML = "Paswort verbergen";
 
     }
 
@@ -45,10 +48,10 @@ function changeData(){
         pPasswort.style.display = "block";
         pNutzername.style.display = "block";
 
-        password.style.display = "none"
-        username.style.display = "none"
+        password.style.display = "none";
+        username.style.display = "none";
 
-        button.innerHTML = "Daten ändern"
+        button.innerHTML = "Daten ändern";
 
     }else{
         isChanging = true;
@@ -57,13 +60,13 @@ function changeData(){
         pPasswort.style.display = "none";
         pNutzername.style.display = "none";
 
-        password.style.display = "block"
-        username.style.display = "block"
+        password.style.display = "block";
+        username.style.display = "block";
 
-        button.innerHTML = "Speichern"
+        button.innerHTML = "Speichern";
     }
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-    showProfilData()
-})
+    showProfilData();
+});

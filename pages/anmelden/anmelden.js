@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+
+
 let isLogin = true;
 
 document.getElementById("form").addEventListener("submit", (event) => {
@@ -35,7 +38,7 @@ document.getElementById("form").addEventListener("submit", (event) => {
 function switchForm() {
     document.getElementById("Error").style.display = "none";
     isLogin = false;
-   switchClass(document.getElementById("confirmDiv"));
+    switchClass(document.getElementById("confirmDiv"));
     switchClass(document.getElementById("confirmInput"));
     switchClass(document.getElementById("confirm"));
     if (document.getElementById("register").innerHTML === "Hier Registrieren"){

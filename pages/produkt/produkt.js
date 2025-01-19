@@ -1,3 +1,7 @@
+/*jshint esversion: 6 */
+/*jshint esversion: 8 */
+
+
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
 import {OrbitControls} from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
 import {GLTFLoader} from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
@@ -68,7 +72,7 @@ document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Added Lichter zu der Scene
 const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
-topLight.position.set(500, 500, 500) //top-left-ish
+topLight.position.set(500, 500, 500); //top-left-ish
 topLight.castShadow = true;
 scene.add(topLight);
 

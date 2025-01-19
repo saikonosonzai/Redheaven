@@ -1,4 +1,4 @@
-let active = document.getElementById("moreInfo0")
+let active = document.getElementById("moreInfo0");
 
 function show(index) {
     let inactive = active;

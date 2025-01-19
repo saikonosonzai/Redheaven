@@ -5,10 +5,15 @@ section{
     flex-direction: column;
 }
 
+#FAQ{
+    margin-top: 2rem;
+}
+
 .card{
     width: 70%;
+    min-height: 5rem;
     margin-bottom: 2.5rem;
-    padding: 1rem 1rem 1.5rem;
+    padding: 1rem;
     text-align: center;
     cursor: pointer;
 }
@@ -19,6 +24,3 @@ section{
     transition: .5s ease-in-out;
 }
 
-.hide:hover{
-    min-height: 5rem;
-}

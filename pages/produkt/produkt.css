@@ -29,3 +29,14 @@ body {
     border-radius: 5rem;
     overflow: hidden;
 }
+
+.card{
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.card img{
+    max-width: 100%;
+    margin-bottom: 2rem;
+    object-fit: cover;
+}

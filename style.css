@@ -185,6 +185,7 @@ footer {
     min-height: 5rem;
     min-width: 20rem;
     background: #070e26;
+    border-radius: 8px;
 }
 
 @media (max-width: 1000px) {

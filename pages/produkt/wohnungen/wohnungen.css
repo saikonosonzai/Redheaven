@@ -39,9 +39,8 @@ button:hover {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0; /* Abstand zwischen den divs */
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -51,3 +50,9 @@ button:hover {
 
 }
 
+
+@media (max-width: 1000px) {
+    .grid-container{
+        flex-direction: column;
+    }
+}

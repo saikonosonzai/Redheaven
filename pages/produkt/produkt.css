@@ -36,12 +36,11 @@ body {
 }
 
 .card{
-    margin: 2rem;
+    height: 100%;
+    margin: 5rem;
     padding: 2rem;
 }
 
 .card img{
-    max-width: 100%;
-    margin-bottom: 2rem;
-    object-fit: cover;
+    max-height: 90%;
 }

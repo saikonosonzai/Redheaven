@@ -12,14 +12,11 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 //setzt die Kamera Position
 camera.position.x = 300;
 
-
 let marsObject;
 let marsExtraObject;
 
 //Zum Bewegen
 let controls;
-
-
 
 //Welches Model dargestellt werden soll
 let objToRender = 'mars';
@@ -110,9 +107,6 @@ function onMouseDown(event) {
         window.location.href = "wohnungen/wohnung.html"; // Link zur gewünschten Seite
     }
 }
-
-
-
 
 //Listener damit der Renderer mit zoomt
 window.addEventListener("resize", function () {

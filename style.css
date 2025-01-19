@@ -1,18 +1,18 @@
+
+
 body {
     padding: 0;
     margin: 0;
     background-color: #0a1926;
     color: #f28B66;
     font-family: "Arial", serif;
-    overflow-x: hidden;
+    overflow-x: clip;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     height: 100%;
-    width: 100%;
 }
 
 header {
@@ -72,6 +72,7 @@ a:hover{
 }
 
 main {
+    width: 70%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -122,12 +123,12 @@ a:visited {
 }
 
 #anmelden {
-    margin-left: 18%;
+    margin-left: 10%;
     display: none;
 }
 
 #logOut {
-    margin-left: 18%;
+    margin-left: 10%;
     cursor: pointer;
 }
 
@@ -222,9 +223,6 @@ footer {
 }
 
 @media (max-width: 1000px) {
-    #overview {
-        max-width: 50%;
-    }
 
     #anmelden, #logOut{
         margin: 0;

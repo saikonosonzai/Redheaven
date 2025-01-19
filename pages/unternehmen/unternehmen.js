@@ -4,9 +4,9 @@ function show(index) {
     let inactive = active;
     active = document.getElementById("moreInfo" + index);
 
-    active.style.minHeight = "5rem"
+    active.style.height = (active.scrollHeight + 10) + "px";
     if (active !== inactive) {
-        inactive.style.minHeight = "0";
+        inactive.style.height = "0";
     }
 
 }

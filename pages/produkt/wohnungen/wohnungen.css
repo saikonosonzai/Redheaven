@@ -1,7 +1,18 @@
-#container3D{
-    max-width: 70%;
+#container3D {
+    max-width: 90%;
+    height: 100%;
+
 }
 
+.bild {
+    background-image: url("../../../resources/wohnung1.jpg");
+    min-width: 10rem;
+    height: 10rem;
+    background-size: contain; /* Bild bleibt vollständig sichtbar */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; /* Verhindert Wiederholung */
+
+}
 
 .container {
     display: flex;
@@ -10,9 +21,11 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 Spalten, gleichmäßig verteilt */
+    grid-template-columns: repeat(3, 1fr);
     gap: 0; /* Abstand zwischen den divs */
 }
+
+
 
 .grid-item {
     padding: 10px;

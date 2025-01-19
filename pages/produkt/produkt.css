@@ -4,9 +4,22 @@ body {
 }
 .mars {
     background-image: url(../../resources/Background.jpg);
-    width: 140%;
-    height: 100vh; /* Hintergrund füllt den gesamten sichtbaren Bereich */
+    min-width: 140%;
+    max-height: 300rem;
+    border-radius: 20rem;
+    overflow: hidden;
     background-size: contain; /* Bild bleibt vollständig sichtbar */
     background-position: center; /* Zentriert das Bild */
     background-repeat: no-repeat; /* Verhindert Wiederholung */
+}
+
+#overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 3rem;
+    max-height: 30rem;
+    border-radius: 5rem;
+    overflow: hidden;
 }

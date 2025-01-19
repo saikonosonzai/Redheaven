@@ -1,1 +1,19 @@
+#container3D
+
+
+.container {
+    display: flex;
+    gap: 10px; /* Abstand zwischen den divs */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Spalten, gleichmäßig verteilt */
+    gap: 0; /* Abstand zwischen den divs */
+}
+
+.grid-item {
+    padding: 10px;
+
+}
 

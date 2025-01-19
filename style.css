@@ -124,13 +124,12 @@ a:visited {
 
 
 #anmelden {
-    margin-left: 10%;
     display: none;
 }
 
 #logOut {
+    margin: 0;
     padding:0;
-    margin: 0 0 0 10%;
     cursor: pointer;
 }
 

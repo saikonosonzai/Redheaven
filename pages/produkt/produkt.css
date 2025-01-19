@@ -1,5 +1,7 @@
 body {
-    background-image: url(../../resources/Background.jpg); /* Pfad zum Bild */
-    background-repeat: repeat; /* Wiederholung aktivieren */
+    background-color: #0a1926;
     margin-bottom: 20px;
+}
+.mars {
+    background-image: url(../../resources/Background.jpg);
 }

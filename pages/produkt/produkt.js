@@ -20,6 +20,7 @@ let marsExtraObject;
 let controls;
 
 
+
 //Welches Model dargestellt werden soll
 let objToRender = 'mars';
 let objToRender_extra = 'mars_extra';
@@ -94,20 +95,23 @@ const raycaster = new THREE.Raycaster();
 document.addEventListener('mousedown', onMouseDown);
 
 function onMouseDown(event) {
+    // Maus-Koordinaten in Normalized Device Coordinates (NDC) umwandeln
     const coords = new THREE.Vector2(
         (event.clientX / renderer.domElement.clientWidth) * 2 - 1,
-        (event.clientY / renderer.domElement.clientHeight) * 2 - 1,
+        -(event.clientY / renderer.domElement.clientHeight) * 2 + 1 // Y invertieren
     );
 
+    // Raycaster mit Kamera und Mausposition setzen
     raycaster.setFromCamera(coords, camera);
 
-    const intersects = raycaster.intersectObject(scene.children, true);
+    // Kollisionsprüfung mit marsObject
+    const intersects = raycaster.intersectObject(marsObject, true);
     if (intersects.length > 0) {
-        console.log(intersects);
+        window.location.href = "wohnungen/wohnung1.html"; // Link zur gewünschten Seite
     }
 }
 
-//window.location.href="wohnungen/wohnung1.html";  // Link zur gewünschten Seite
+
 
 
 //Listener damit der Renderer mit zoomt

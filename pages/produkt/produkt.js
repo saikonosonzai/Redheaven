@@ -9,7 +9,8 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 camera.position.x = 300;
 
 
-let object;
+let marsObject;
+let marsExtraObject;
 
 //Zum Bewegen
 let controls;
@@ -27,8 +28,8 @@ loader.load(
     `../../resources/models/${objToRender}/scene.gltf`,
     function (gltf) {
         //If the file is loaded, add it to the scene
-        object = gltf.scene;
-        scene.add(object);
+        marsObject = gltf.scene;
+        scene.add(marsObject);
     },
     function (xhr) {
         //While it is loading, log the progress
@@ -44,8 +45,8 @@ loader.load(
     `../../resources/models/${objToRender_extra}/scene.gltf`,
     function (gltf) {
         //If the file is loaded, add it to the scene
-        object = gltf.scene;
-        scene.add(object);
+        marsExtraObject = gltf.scene;
+        scene.add(marsExtraObject);
     },
     function (xhr) {
         //While it is loading, log the progress
@@ -82,6 +83,28 @@ function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
 }
+
+// Raycaster und Maus-Position
+const raycaster = new THREE.Raycaster();
+
+document.addEventListener('mousedown', onMouseDown);
+
+function onMouseDown(event) {
+    const coords = new THREE.Vector2(
+        (event.clientX / renderer.domElement.clientWidth) * 2 - 1,
+        (event.clientY / renderer.domElement.clientHeight) * 2 - 1,
+    );
+
+    raycaster.setFromCamera(coords, camera);
+
+    const intersects = raycaster.intersectObject(scene.children, true);
+    if (intersects.length > 0) {
+        console.log(intersects);
+    }
+}
+
+//window.location.href="wohnungen/wohnung1.html";  // Link zur gewünschten Seite
+
 
 //Listener damit der Renderer mit zoomt
 window.addEventListener("resize", function () {

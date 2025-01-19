@@ -3,6 +3,9 @@
 		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
+	"extensionsUsed":[
+		"KHR_materials_emissive_strength"
+	],
 	"scene":0,
 	"scenes":[
 		{
@@ -15,28 +18,57 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"Sphere",
+			"name":"Sphere.001",
 			"rotation":[
-				0.19190508127212524,
-				0.06416092813014984,
-				-0.0075913602486252785,
-				0.9792845249176025
+				0.844687283039093,
+				-0.25026723742485046,
+				-0.45852231979370117,
+				0.11673581600189209
 			],
 			"scale":[
-				4.3488006591796875,
 				4.348800182342529,
-				4.348799705505371
+				4.348800182342529,
+				4.348800182342529
 			],
 			"translation":[
-				0,
 				1.161819000117248e-05,
-				-2.323638000234496e-05
+				0,
+				1.161819000117248e-05
 			]
+		}
+	],
+	"materials":[
+		{
+			"doubleSided":true,
+			"emissiveFactor":[
+				1,
+				1,
+				1
+			],
+			"emissiveTexture":{
+				"index":0
+			},
+			"extensions":{
+				"KHR_materials_emissive_strength":{
+					"emissiveStrength":100
+				}
+			},
+			"name":"Material.001",
+			"pbrMetallicRoughness":{
+				"baseColorFactor":[
+					0.800000011920929,
+					0.800000011920929,
+					0.800000011920929,
+					1
+				],
+				"metallicFactor":0,
+				"roughnessFactor":0.5
+			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"Sphere",
+			"name":"Sphere.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -44,9 +76,23 @@
 						"NORMAL":1,
 						"TEXCOORD_0":2
 					},
-					"indices":3
+					"indices":3,
+					"material":0
 				}
 			]
+		}
+	],
+	"textures":[
+		{
+			"sampler":0,
+			"source":0
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/jpeg",
+			"name":"Sphere",
+			"uri":"textures/Sphere.jpg"
 		}
 	],
 	"accessors":[
@@ -55,13 +101,13 @@
 			"componentType":5126,
 			"count":1984,
 			"max":[
-				0.9999994039535522,
-				1,
+				1.0000015497207642,
+				0.9999837279319763,
 				-42.3707275390625
 			],
 			"min":[
-				-0.9999993443489075,
-				-1,
+				-0.9999972581863403,
+				-1.0000163316726685,
 				-44.3707275390625
 			],
 			"type":"VEC3"
@@ -109,6 +155,12 @@
 			"byteLength":5760,
 			"byteOffset":63488,
 			"target":34963
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
 		}
 	],
 	"buffers":[

@@ -2,13 +2,14 @@ main {
     padding-bottom: 5rem;
 }
 
-input{
+input {
     margin-top: .5rem;
     border: none;
     border-radius: 2rem;
     padding: .5rem;
 }
-label{
+
+label {
     margin-top: .7rem;
 }
 
@@ -31,7 +32,7 @@ button:hover {
     box-shadow: 10rem 0 0 0 #BF4539 inset;
 }
 
-#login form{
+#login form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -50,15 +51,15 @@ button:hover {
     width: 100%;
 }
 
-#register{
+#register {
     cursor: pointer;
 }
 
-.confirmPassword{
+.confirmPassword {
     display: none;
 }
 
-.Error{
+.Error {
     display: none;
     font-size: small;
     width: 100%;

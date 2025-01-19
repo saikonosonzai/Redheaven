@@ -1,13 +1,18 @@
 #container3D {
-    max-width: 90%;
+    max-width: 80%;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
     background-color: #0a1926;
     margin-bottom: 20px;
 }
+
+
 .mars {
     background-image: url(../../resources/Background.jpg);
     min-width: 140%;

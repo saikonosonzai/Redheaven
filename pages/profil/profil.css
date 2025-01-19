@@ -32,7 +32,11 @@ p{
     display: block;
 }
 
-a{
+#wohnung{
+    color: #BF4539;
+}
+
+#wohnung:visited{
     color: #BF4539;
 }
 

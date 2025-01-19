@@ -1,6 +1,5 @@
 /*jshint esversion: 6 */
 
-
 function updateHeader() {
     if (localStorage.getItem("loggedIn") === "true") {
         document.getElementById("anmelden").style.display = "none";
@@ -22,5 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function addToList(){
-    localStorage.setItem("Wohnung", "Wohnung 1");
+    localStorage.setItem("Wohnung", "true");
 }
+
+

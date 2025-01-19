@@ -74,8 +74,8 @@ window.addEventListener("DOMContentLoaded", () => {
     showProfilData();
 
     let date = new Date();
-if (localStorage.getItem("Wohnung") !== null){
-    document.getElementById("warteliste").innerHTML = "<li><a href='../produkt/wohnungen/wohnung.html'>"+ localStorage.getItem("Wohnung")+"</a> zuzeit sind "+ date.getTime() +" Personen am Warten</li>";
+if (localStorage.getItem("Wohnung") === "true"){
+    document.getElementById("warteliste").innerHTML = "<li><a id='wohnung' href='../produkt/wohnungen/wohnung.html'>Wohnung 1</a> zuzeit sind "+ date.getTime() +" Personen am Warten</li>";
 }
 
 });

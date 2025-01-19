@@ -1,13 +1,16 @@
 #container3D {
-    max-width: 90%;
-    height: 100%;
+    max-width: 60%;
+    height: 30%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .bild {
     background-image: url("../../../resources/wohnung1.jpg");
-    min-width: 10rem;
+    width: 10rem;
     height: 10rem;
     background-size: contain; /* Bild bleibt vollständig sichtbar */
     background-position: center; /* Zentriert das Bild */

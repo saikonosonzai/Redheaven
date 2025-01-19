@@ -23,9 +23,20 @@ input{
     border-radius: 2rem;
     padding: .5rem;
     max-height: 1rem;
+    max-width: 10rem;
     display: none;
 }
 
 p{
+    margin: 1rem 0.5rem .5rem;
     display: block;
+}
+
+@media (max-width: 1000px) {
+
+    #nutzerdaten{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

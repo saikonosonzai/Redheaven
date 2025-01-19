@@ -1,5 +1,12 @@
 body {
-    background-image: url(../../resources/Background.jpg); /* Pfad zum Bild */
-    background-repeat: repeat; /* Wiederholung aktivieren */
+    background-color: #0a1926;
     margin-bottom: 20px;
+}
+.mars {
+    background-image: url(../../resources/Background.jpg);
+    width: 140%;
+    height: 100vh; /* Hintergrund füllt den gesamten sichtbaren Bereich */
+    background-size: contain; /* Bild bleibt vollständig sichtbar */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; /* Verhindert Wiederholung */
 }

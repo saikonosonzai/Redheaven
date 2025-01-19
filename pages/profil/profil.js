@@ -74,7 +74,8 @@ window.addEventListener("DOMContentLoaded", () => {
     showProfilData();
 
     let date = new Date();
-
+if (localStorage.getItem("Wohnung") !== null){
     document.getElementById("warteliste").innerHTML = "<li>"+ localStorage.getItem("Wohnung")+": zuzeit sind "+ date.getTime() +" Personen am Warten</li>";
+}
 
 });

@@ -3,45 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Mike Hasler, Noah Härtel, Sebastian Boden, Sajed Rasooli">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Heaven</title>
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="./profil.css">
-    <script src="../../service.js" defer></script>
-    <script src="./profil.js"></script>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="wohnungen.css">
+    <script src="../../../service.js" defer></script>
 </head>
-<body>
 
+<body>
 <header>
-    <a href="../../index.html">
-        <img id="logo" src="../../resources/Red_Heaven_Logo.png" alt="Red Heaven Logo">
+    <a href="../../../index.html">
+        <img id="logo" src="../../../resources/Red_Heaven_Logo.png" alt="Red Heaven Logo">
         <p class="logoInk">Red Heaven</p>
     </a>
 
     <nav>
-        <a class="headerInk" href="../produkt/produkt.html">Produkt</a>
-        <a class="headerInk" href="../unternehmen/unternehmen.html">Unternehmen</a>
-        <a class="headerInk" href="../anmelden/anmelden.html" id="anmelden">Anmelden</a>
+        <a class="headerInk" href="../../produkt/produkt.html">Produkt</a>
+        <a class="headerInk" href="../../unternehmen/unternehmen.html">Unternehmen</a>
+        <a class="headerInk" href="../../anmelden/anmelden.html" id="anmelden">Anmelden</a>
         <p class="headerInk" id="logOut" onclick="logOut()">Log-Out</p>
     </nav>
 </header>
 
 <main>
 
-    <div class="card">
-        <h1>Profil:</h1>
-        <div id="nutzerdaten">
-            <h2>Nutzername:</h2>
-            <p id="nutzername"></p>
-            <input type="text" id="username">
 
-            <h2>Passwort:</h2>
-            <p id="passwort"></p>
-            <input type="text" id="password">
-            <button onclick="changeVisibility()" id="changeVisibility">Passwort anzeigen</button>
+    <div class="card" id="container3D">
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="card">
+
+                <h2>Wohnungseigenschaften</h2>
+
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3>Typ:</h3>
+                        <h3>Größe:</h3>
+                        <h3>Anzahl Zimmer:</h3>
+                        <h3>Schlafzimmer:</h3>
+                        <h3>Wohnzimmer:</h3>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <p>Eigentumswohnung</p>
+                        <p>32m^2</p>
+                        <p>7 Zimmer</p>
+                        <p>2 Schlafzimmer</p>
+                        <p>1 Wohnzimmer</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
-
-        <button onclick="changeData()" id="changeData">Daten ändern</button>
+        <div class="grid-item">
+            <div class="card">
+                <h2>Wohnung</h2>
+                <img src="../../../resources/wohnung1.jpg" alt="Wohnung">
+            </div>
+        </div>
     </div>
 
 </main>
@@ -74,10 +94,10 @@
         <div class="footer-links">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="../produkt/produkt.html">Produkt</a></li>
-                <li><a href="../unternehmen/unternehmen.html">Unternehmen</a></li>
-                <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
-                <li><a href="./anmelden.html">Anmelden</a></li>
+                <li><a href=".././produkt.html">Produkt</a></li>
+                <li><a href="../../unternehmen/unternehmen.html">Unternehmen</a></li>
+                <li><a href="../../kontakt/kontakt.html">Kontakt</a></li>
+                <li><a href="../../anmelden/anmelden.html">Anmelden</a></li>
             </ul>
         </div>
 
@@ -85,7 +105,7 @@
             <h3>Unsere Angebote</h3>
             <p>Entdecke unsere Angebote für deine Anforderungen. Und sichere dir Rabatte.</p>
             <ul>
-                <li><a href="../produkt/produkt.html">Produkt</a></li>
+                <li><a href=".././produkt.html">Produkt</a></li>
             </ul>
         </div>
 
@@ -105,6 +125,7 @@
     </div>
 </footer>
 
-</body>
 
+</body>
+<script type="module" src="wohnungen.js"></script>
 </html>

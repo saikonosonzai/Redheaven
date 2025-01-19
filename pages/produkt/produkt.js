@@ -107,7 +107,7 @@ function onMouseDown(event) {
     // Kollisionsprüfung mit marsObject
     const intersects = raycaster.intersectObject(marsObject, true);
     if (intersects.length > 0) {
-        window.location.href = "wohnungen/wohnung1.html"; // Link zur gewünschten Seite
+        window.location.href = "wohnungen/wohnung.html"; // Link zur gewünschten Seite
     }
 }
 

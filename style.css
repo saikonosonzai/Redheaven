@@ -32,16 +32,11 @@ header {
 }
 
 .logoInk {
-    font-family: "Copperplate Gothic Light", serif;
     color: #BF4539;
     font-size: x-large;
     text-decoration: none;
     white-space: nowrap;
 }
-
-/*
-
-*/
 
 nav {
     width: 100%;

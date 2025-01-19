@@ -68,5 +68,8 @@ function changeData(){
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+    pNutzername = document.getElementById("nutzername");
+    pPasswort = document.getElementById("passwort");
+    bChangeVisibility = document.getElementById("changeVisibility");
     showProfilData();
 });

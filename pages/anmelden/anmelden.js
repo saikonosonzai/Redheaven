@@ -58,5 +58,5 @@ function switchClass(document) {
 
 
 window.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("confirm").required = true;
+    document.getElementById("confirm").required = false;
 });

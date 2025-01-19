@@ -55,3 +55,8 @@ function switchClass(document) {
         document.className = "";
     }
 }
+
+
+window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("confirm").required = true;
+});

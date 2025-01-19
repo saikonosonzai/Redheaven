@@ -24,3 +24,7 @@ input{
     max-height: 1rem;
     display: none;
 }
+
+p{
+    display: block;
+}

@@ -21,7 +21,13 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function addToList(){
-    localStorage.setItem("Wohnung", "true");
+    if (localStorage.getItem("loggedIn") === "false"){
+        window.location.href = "../../anmelden/anmelden.html"
+    }else{
+        localStorage.setItem("Wohnung", "true");
+        window.location.href = "../../profil/profil.html#warteliste"
+    }
+
 }
 
 

@@ -20,3 +20,7 @@ function logOut() {
 window.addEventListener("DOMContentLoaded", () => {
     updateHeader();
 });
+
+function addToList(){
+    localStorage.setItem("Wohnung", "Wohnung 1");
+}

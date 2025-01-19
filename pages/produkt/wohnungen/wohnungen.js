@@ -80,3 +80,5 @@ controls.enablePan = false;
 
 //startet das rendering
 animate();
+
+

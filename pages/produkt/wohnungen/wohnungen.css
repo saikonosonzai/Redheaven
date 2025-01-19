@@ -29,7 +29,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 10rem 0 0 0 #BF4539 inset;
+    box-shadow: 20rem 0 0 0 #BF4539 inset;
 }
 
 .container {

@@ -72,4 +72,9 @@ window.addEventListener("DOMContentLoaded", () => {
     pPasswort = document.getElementById("passwort");
     bChangeVisibility = document.getElementById("changeVisibility");
     showProfilData();
+
+    let date = new Date();
+
+    document.getElementById("warteliste").innerHTML = "<li>"+ localStorage.getItem("Wohnung")+": zuzeit sind "+ date.getTime() +" Personen am Warten</li>";
+
 });

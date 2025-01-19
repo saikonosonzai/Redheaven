@@ -1,6 +1,7 @@
 #container3D {
     max-width: 90%;
     height: 100%;
+    overflow: hidden;
 }
 
 body {

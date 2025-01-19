@@ -150,13 +150,6 @@ footer {
     width: 100%;
 }
 
-/*
-.footer-container > div {
-    padding: 30px 30px;
-    width: 100%;
-}
-*/
-
 .footer-payments ul,
 .footer-payments ul,
 .footer-links ul,
@@ -173,26 +166,6 @@ footer {
 .footer-angebote li,
 .footer-social li {
     margin: 5px 0;
-}
-
-.footer-info {
-
-}
-
-.footer-payments {
-
-}
-
-.footer-links {
-
-}
-
-.footer-angebote {
-
-}
-
-.footer-social {
-
 }
 
 .copyright {
